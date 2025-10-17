@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulasan Buku - Proyek TIK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Ulasan Buku</h1>
+    <p>Tempat berbagi opini dan penilaian buku favoritmu!</p>
+  </header>
+
+  <section id="book-list"></section>
+
+  <section id="review-form">
+    <h2>Tambah Ulasan</h2>
+    <input type="text" id="bookTitle" placeholder="Judul buku">
+    <textarea id="bookReview" placeholder="Tulis ulasanmu di sini..."></textarea>
+    <input type="number" id="bookRating" min="1" max="5" placeholder="Rating (1-5)">
+    <button onclick="addReview()">Kirim</button>
+  </section>
+
+  <footer>
+    <p>Website ini dibuat untuk keperluan pembelajaran. Semua ulasan ditulis oleh pengguna.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
