@@ -9,21 +9,24 @@
 <body>
   <header>
     <h1>📚 Ulasan Buku</h1>
-    <p>Tempat berbagi opini dan penilaian buku favoritmu!</p>
+    <p>Cari buku, baca ulasan, dan bagikan pendapatmu!</p>
   </header>
 
-  <section id="book-list"></section>
+  <section id="search">
+    <input type="text" id="searchInput" placeholder="Cari judul buku..." onkeyup="searchBook()">
+  </section>
 
-  <section id="review-form">
-    <h2>Tambah Ulasan</h2>
-    <input type="text" id="bookTitle" placeholder="Judul buku">
-    <textarea id="bookReview" placeholder="Tulis ulasanmu di sini..."></textarea>
-    <input type="number" id="bookRating" min="1" max="5" placeholder="Rating (1-5)">
+  <section id="book-container"></section>
+
+  <section id="review-form" style="display: none;">
+    <h2>Tulis Ulasan untuk <span id="selectedBookTitle"></span></h2>
+    <textarea id="reviewText" placeholder="Tulis ulasanmu di sini..."></textarea>
+    <input type="number" id="rating" min="1" max="5" placeholder="Rating (1-5)">
     <button onclick="addReview()">Kirim</button>
   </section>
 
   <footer>
-    <p>Website ini dibuat untuk keperluan pembelajaran. Semua ulasan ditulis oleh pengguna.</p>
+    <p>Website ini dibuat untuk pembelajaran. Semua ulasan adalah opini pengguna.</p>
   </footer>
 
   <script src="script.js"></script>
